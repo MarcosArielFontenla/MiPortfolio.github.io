@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <title>Marcos Ariel Fontenla - Web Developer</title>
+    <meta name="description" content="My web development portfolio. check it out!">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="hero-unit dark-content d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-md-6">
+                    <h1 class="hero-unit-heading">Soy Marcos A.</h1>
+                    <h2 class="hero-unit-subheading">Web Developer</h2>
+                    <p>Disfruto construir aplicaciones web para las personas/clientes. Desde la idea hasta el despliegue, puedo encargarme de todo el proceso.</p>
+                    <p>Esta web la hice para mostrar mis mas recientes proyectos.</p>
+                    <button id="portfolio-button" class="mt-5 btn btn-primary">Revisá mi portfolio</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section content-section-centered">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Mi Portfolio</h2>
+                    <p>Estos son unos de mis favoritos y mas recientes trabajos.</p>
+                </div>
+            </div>
+            <div class="row portfolio-cards">
+                <div class="col-sm-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-image" style="background-image: url(../MiPortfolio/img/portfolio-placeholder.jpg)"></div>
+                        <div class="portfolio-card-information">
+                            <span class="portfolio-card-title"><a href="https://sabrinamanzini.netlify.app/" target="_blank">Sabrina Manzini</a></span>
+                            <span class="portfolio-card-credits">Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-image" style="background-image: url('../MiPortfolio/img/portfolio-placeholder.jpg')"></div>
+                        <div class="portfolio-card-information">
+                            <span class="portfolio-card-title"><a href="https://mmgsoft.netlify.app/" target="_blank">MMG Soft</a></span>
+                            <span class="portfolio-card-credits">Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-image" style="background-image: url(../MiPortfolio/img/portfolio-placeholder.jpg)"></div>
+                        <div class="portfolio-card-information">
+                            <span class="portfolio-card-title"><a href="https://bienesinmusoft.netlify.app/" target="_blank">Bienes Inmuebles</a></span>
+                            <span class="portfolio-card-credits">Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section content-section-side-image dark-content">
+        <div class="content-section-side-image-container d-block d-sm-none" style="background-image: url('../MiPortfolio/img/who-am-i-mobile.jpg')"></div>
+        <div class="content-section-side-image-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9 offset-sm-1">
+                        <h2 class="content-section-side-image-heading">
+                            <img class="img-circle mb-2" src="img/MiFotocv.png" width="100" height="100" alt="mi foto de perfil">
+                            <br>
+                            Quien Soy?
+                        </h2>
+                        <p>Soy Desarrollador Web Frontend, incorporando tambien Backend con C# .NET para convertirme en Full Stack Developer.</p>
+                        <p>Busco incorporarme y capacitarme en el mundo del desarrollo tanto del lado del cliente como del servidor. Soy una persona proactiva, me gusta trabajar en equipo y tengo una gran capacidad de aprendizaje intensivo diariamente. Estoy estudiando la carrera de Analista en Sistemas en ISIV Instituto Superior, para luego continuar la Ingeniería en Sistemas.</p>
+                        <p>Actualmente me encuentro formando un grupo de trabajo "Freelance" con amigos, tratandose de creación de Desktop Software y Apps Web.</p>
+                        <p>Para ver el rango de mis skills, <a href="#">click aqui!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-side-image-container d-none d-sm-block" style="background-image: url('../MiPortfolio/img/who-am-i-desktop.jpg')"></div>
+        
+    </section>
+
+    <section class="content-section content-section-centered">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Nos contactamos?</h2>
+                    <p>Saludame o preguntame lo que sea!. Siempre con las ansias de poder ayudar.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-sm-3 col-sm-6">
+                    <form class="contact-form">
+                        <input class="contact-form-input" type="text" name="name" placeholder="Nombre" value="" required>
+                        <input class="contact-form-input" type="email" name="email" placeholder="Email" value="" required>
+                        <input class="contact-form-input" type="text" name="telefono" placeholder="Teléfono" value="" required>
+                        <textarea class="contacto-form-input" name="consultas" placeholder="Tu consulta..."></textarea>
+                        <div class="contact-form-actions">
+                            <input class="contact-form-checkbox-input" id="consent" type="checkbox" name="consent" value="1" required>
+                            <label for="consent" class="contact-form-checkbox-label">
+                                Acepto recibir una respuesta directa desde los datos que proporcioné anteriormente.
+                            </label>
+                            <button class="btn btn-primary btn-block" type="submit">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        &copy; Marcos Ariel Fontenla - 2020
+    </footer>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
