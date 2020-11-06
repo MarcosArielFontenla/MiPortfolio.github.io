@@ -1,0 +1,448 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /*fuente de letra*/
+}
+
+header .contenedor {
+display: flex; /*nos muestra uno al lado del otro y va sobre el elemento padre*/
+justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li{
+    list-style: none; 
+    margin-right: 15px; 
+}
+
+header a{
+    text-decoration: none;
+    border-radius: 10px; 
+}
+
+header a.logo-heading {
+    color: #ffff;
+    font-size: 20px;
+    margin-top: 14px;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    background: linear-gradient(rgb(84, 132, 221,.4),rgb(96, 179, 246,.4)), url(../imagenes/fondo1.jpg); /*llamamos a la imagen de fondo y con linear gradient rgb le aplicamos degradados*/
+    height: 100vh; /*alto total del fondo de la pag*/
+    background-size: cover; /*adapta el tamaño del fondo a nuestra pantalla*/
+}
+
+#contenedor-titulo-flex { /*llamamos al id contenedor titulo flex*/
+    display: flex; /*agrupamos*/
+    justify-content: center; /*centramos los titulos*/
+    margin: 18vh 0; /*margin 18 es top y bottom, 0 es right y left*/
+    width: 100%; /*que abarque el centro de la pantalla*/
+}
+
+h1 {
+    font-size: 60px;
+    color: #ffff;
+    margin: 0;
+}
+
+h2{
+    font-size: 25px;
+    color: #ffff;
+}
+
+.contenedor-titulo{
+    text-align: center;
+}
+
+.contenedor-titulo a, #sobre-mi a { /*nuevo boton de VER MIS TRABAJOS con mismas fuentes para todos los botones*/
+    font-size: 14px; /*tamaño letra*/
+    color: #ffff; /*color de letra*/
+    background: #5cb8ff; /*fondo de letra*/
+    padding: 14px 24px; /*tamaño del boton y como antes, 14 es top y bottom, 24 es right y left*/
+    display: inline-block;
+}
+
+nav ul li a{ /*llamo a lo que esta dentro de nav, unlisted, lista y a*/
+    color: #ffff; /*le doy color al menu*/
+    
+}
+
+                                   /* SECCION DE SOBRE MI */
+
+h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+#sobre-mi .contenedor-sobremi{ /*llamamos al id sobre-mi con el div contenedor padre*/
+    display: flex; /*alineamos las computadoras y parrafos uno al lado del otro*/
+    justify-content: space-around; /*separamos un poco el logo del texto*/
+}
+
+#sobre-mi .texto{
+    width: 42%; /*achicamos o ajustamos el texto*/
+}
+
+img {
+width: 380px;
+height: 200px;
+}
+
+                                        /*SECCION DE SERVICIOS*/
+
+.contenedor-servicios {
+display: flex;
+justify-content: space-around; /*le pido que me separe los cuadros*/
+flex-wrap: wrap;
+color: #ffff;
+}
+
+.servicio {
+    width: 24%;
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.servicio h4{ /*para modificar los titulos*/
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicio p{ /*para modificar los parrafos*/
+margin-bottom: 20px;
+height: 194px;
+}
+
+.contenedor-servicios .violeta{
+    background: linear-gradient(to top,#5055df, #6d68f3); /*fondo del cuadro*/
+    box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37); /*sombra detras del cuadro*/
+}
+
+.contenedor-servicios .celeste{
+    background: linear-gradient(to top, #40a8f9, #5cb8ff);
+    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+}
+
+.ondas{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.icono{
+    width: 64px;
+    height: 64px;
+    float: right; /*le pedimos que nos tire los iconos hacia la derecha*/
+    margin-top: 15px;
+}
+
+                                    /*SECCION NUESTROS TRABAJOS*/
+
+button.owl-prev, button.owl-next {
+font-size: 40px !important;
+}
+
+span {
+    color: #b7b7f1;
+}
+
+#nuestros-trabajos p{ /*llamo el id nuestros-trabajos*/
+    text-align: center;
+    color: #000;
+}
+
+                                /*SECCION POR QUE TRABAJAR CON NOSOTROS*/
+
+
+.contenedor-trabajar { /*traemos al id contenedor-trabajar*/
+    display: flex; /*lo pongo uno al lado del otro*/
+    flex-wrap: wrap; /*detecta elementos que ocupan lugar los baja a otra linea*/
+    justify-content: space-around; /*para separarlos un poco*/
+}
+
+#por-que-trabajar .item {
+    width: 28%;
+    text-align: center; /*alineamos al centro el texto*/
+    
+}
+
+#por-que-trabajar ul li { /*llamamos a ul y listas del por que trabajar*/
+    list-style: none; /*le sacamos los puntos de la lista*/
+}
+
+#por-que-trabajar ul li:nth-child(2){ /*llamamos al elemento hijo 2 del elemento padre*/
+font-weight: bold;
+font-size: 19px; /*tamaño del titulo velocidad*/
+margin-top: 5px; /*lo separamos un poco de la imagen*/
+margin-bottom: 20px; /*lo separamos un poco del texto*/
+}
+
+#por-que-trabajar ul li:nth-child(3){ /*llamo al texto/parrafo */
+    line-height: 31px; /*alto de linea*/
+}
+
+.iconovelocidad{
+    width: 64px;
+    height: 64px;
+}
+
+                                    /*SECCION QUE ESPERAS?*/
+
+#que-esperas { /*llamamos al todo el id que-esperas*/
+    background: linear-gradient(rgba(84, 93, 220, .94), rgba(96, 171, 245, .9));
+    text-align: center; /*centramos tanto el texto como el boton*/
+    padding: 50px 0; /*rellenamos los espacios top, bot, right y left*/
+    margin-top: 30px;
+}
+
+#que-esperas h3 { /*vamos con el parrafo*/
+    font-size: 23px; /*cambiamos el tamaño*/
+    color: #ffff; /*letras color blanco*/
+}
+
+#que-esperas a{
+    font-size: 14px;
+    color: #ffff;
+    background: #5cb8ff;
+    padding: 14px 24px;
+    width: 128px;
+    display: inline-block;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+                                    /*SECCION CONTACTO*/
+
+#contacto form{ /*llamo a todo el contenido de FORM del id contacto*/
+    display: flex; /*los pongo uno al lado del otro*/
+    justify-content: space-between; /*separamos entre y entre de cada uno*/
+    flex-wrap: wrap;
+    width: 77%; /*fijamos el ancho del campo del formulario*/
+    margin: auto; /*nos centra el cuadro cuando lo fijamos con %*/
+}
+
+input[type="text"], input[type="email"]{
+    width: 49%; /*asi tenemos el tamaño justo para que esten uno al lado del otro*/
+    margin-bottom: 15px; /*le damos margen de abajo*/
+    padding: 18px 0;
+    border: 0; /*le sacamos los bordes que vienen por defecto*/
+    border-bottom: 1px solid #5cb8ff; /*le ponemos un borde abajo solido de color*/
+    font-size: 17px; /*tamaño de letra*/
+}
+
+textarea {
+    padding: 18px 0;
+    border: 0; /*le sacamos los bordes que vienen por defecto*/
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px; 
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+input[type="submit"]{
+    font-size: 14px;
+    color: #ffff;
+    background: #5cb8ff;
+    padding: 14px 24px;
+    width: 166px;
+    margin: auto;
+    display: inline-block;
+}
+
+.contacto-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    
+}
+
+.iconoinfo {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle; /*alineamos verticalmente al lado del texto*/
+    margin-right: 10px; /*le damos margen de la derecha*/
+}
+
+.iconosredes {
+    width: 24px;
+    height: 24px;
+    margin: 0 40px; /*con el margin 0 arriba y 40 a los costados separo las redes entre si*/
+    transform: rotate(0);
+    transition: 0.4s;
+}
+
+                                                /*FOOTER*/
+
+footer {
+    background: #2f2f2f;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px; /*separamos el footer un poco de la info de contacto*/
+}
+
+footer .contenedor {
+    display: flex; /*unimos uno al lado del otro las redes con el parrafo*/
+    justify-content: center; /*centramos las redes y el parrafo*/
+    flex-direction: column; /*ponemos arriba las redes y abajo el parrafo*/
+}
+
+footer .iconosredes:hover {
+transform: rotate(360deg);
+transition: 0.4s;
+}
+
+footer p { /*llamo al parrafo que esta en footer*/
+    color: #ffff; /*color de letra*/
+    margin-top: 40px; /*margen de arriba*/
+}
+
+#whatsapp { /*llamamos al id whatsapp*/
+    position: fixed; /*posicion fija en la pantalla*/
+    top: 80%; /*lo llevo al 80% de la pantalla desde arriba*/
+    right: 1%; /*lo llevo al 1% de la pantalla a la derecha*/
+}
+
+#whatsapp img { /*llamo a la imagen del id whatsapp para modificarlo*/
+    width: 64px;
+    height: 64px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#sobre-mi, #Servicios, #nuestros-trabajos, #por-que-trabajar, #contacto{
+    padding: 90px 0;
+}
+
+.menu-icon {
+    display: none; /*desaparece el icono del menu en el escritorio*/
+}
+
+@media (max-width: 800px) { /*que el medio por el cual se va a ver la pag, se vea en dispositivos que tengan un maximo de ancho de 800px*/
+
+
+
+.menu-icon{
+    display: block; /*lo dejamos fijo para celular o tablet*/
+    float: right; /*lo tiramos para la derecha*/
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+header nav {
+    position: absolute;
+    top: 83px;
+    left: 0;
+    height: 268px;
+    background: #5cb8ff;
+    width: 100%;
+    display: none;
+    
+}
+
+header nav ul {
+    flex-direction: column; /*los ponemos uno encima del otro*/
+}
+
+header nav ul li {
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 19px;
+}
+
+#sobre-mi .contenedor-sobremi {
+    flex-direction: column;
+}
+
+#sobre-mi img {
+    width: 100%;
+}
+
+#sobre-mi .texto {
+    width: 100%;
+}
+
+.contenedor-servicios {
+    flex-direction: column;
+}
+
+.servicio {
+    width: 82%;
+    padding: 34px 30px 69px 30px;
+}
+
+h3 {
+    font-size: 43px;
+}
+
+.contenedor-trabajar {
+    flex-direction: column;
+}
+
+#por-que-trabajar .item {
+    width: 100%;
+}
+
+.item ul {
+    padding: 0;
+}
+
+#contacto form {
+    flex-direction: column;
+    width: 100%;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+}
+
+.iconosredes {
+    width: 24px;
+    height: 24px;
+    margin: 0px 24px;
+}
+
+.contacto-info {
+    font-size: 11px;
+}
+
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    header {
+        height: 70vh;
+    }
+
+    .servicio {
+        width: 57%;
+        padding: 34px 30px 69px 30px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+
+
+
+
+
+
+}
